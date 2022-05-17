@@ -21,12 +21,12 @@ public class GmailLoginTestCases {
         // email
         WebElement useremail = driver.findElement(By.id("identifierId"));
         useremail.sendKeys("danjer9@gmail.com",Keys.ENTER);
-        Thread.sleep(2000);
+        Thread.sleep(4000);
 
         // pass
         WebElement password = driver.findElement(By.name("password"));
         password.sendKeys("Java12345",Keys.ENTER);
-        Thread.sleep(2000);
+        Thread.sleep(4000);
 
         // Assertion
         String actualUrl = "https://mail.google.com/mail/u/0/#inbox";
