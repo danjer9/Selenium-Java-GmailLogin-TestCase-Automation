@@ -2,13 +2,13 @@ package mailLogin;
 
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 
-public class gmailLoginTest {
+public class GmailLoginTestCases {
 
     @Test
     public void login() throws InterruptedException {
@@ -20,15 +20,15 @@ public class gmailLoginTest {
 
         // email
         WebElement useremail = driver.findElement(By.id("identifierId"));
-        useremail.sendKeys("kkjavatest@gmail.com",Keys.ENTER);
-        Thread.sleep(3000);
+        useremail.sendKeys("danjer9@gmail.com",Keys.ENTER);
+        Thread.sleep(2000);
 
-        // password
+        // pass
         WebElement password = driver.findElement(By.name("password"));
         password.sendKeys("Java12345",Keys.ENTER);
-        Thread.sleep(5000);
+        Thread.sleep(2000);
 
-        // Assertion...inbox..
+        // Assertion
         String actualUrl = "https://mail.google.com/mail/u/0/#inbox";
         String expectedUrl = driver.getCurrentUrl();
 
@@ -40,7 +40,7 @@ public class gmailLoginTest {
             System.out.println("Test failed");
         }
 
-        //close
+        // Exit
         driver.quit();
     }
 }
