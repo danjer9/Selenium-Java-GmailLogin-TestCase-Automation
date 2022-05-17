@@ -35,9 +35,9 @@ public class GmailLoginTestCases {
         Assert.assertEquals(expectedUrl,actualUrl);
 
         if(actualUrl.equalsIgnoreCase(expectedUrl)) {
-            System.out.println("Test passed");
+            System.out.println("Pass");
         } else {
-            System.out.println("Test failed");
+            System.out.println("Fail");
         }
 
         // Exit
