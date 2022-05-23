@@ -1,4 +1,4 @@
-package mailLogin;
+package GmailLogin;
 
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
