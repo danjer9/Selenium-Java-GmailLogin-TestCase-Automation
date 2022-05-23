@@ -25,7 +25,7 @@ public class GmailLoginTestCases {
 
         // pass
         WebElement password = driver.findElement(By.name("password"));
-        password.sendKeys("Java12345",Keys.ENTER);
+        password.sendKeys("Password",Keys.ENTER);
         Thread.sleep(4000);
 
         // Assertion
