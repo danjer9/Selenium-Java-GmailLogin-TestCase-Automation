@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 
-public class GmailLoginTestCases {
+public class GmailLoginTestCase {
 
     @Test
     public void login() throws InterruptedException {
@@ -24,7 +24,7 @@ public class GmailLoginTestCases {
 
         // pass
         WebElement password = driver.findElement(By.name("password"));
-        password.sendKeys("Password",Keys.ENTER);
+        password.sendKeys("Pass1234",Keys.ENTER);
         Thread.sleep(4000);
 
         // Assertion
@@ -39,10 +39,11 @@ public class GmailLoginTestCases {
             System.out.println("Fail");
         }
 
-        // Exit
-        driver.quit();
+    }        
         
-        
+    
+    @Test
+    public void login1() throws InterruptedException {
         
         // chromedriver
         System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");
@@ -56,7 +57,7 @@ public class GmailLoginTestCases {
 
         // pass
         WebElement password = driver1.findElement(By.name("password"));
-        password.sendKeys("Password",Keys.ENTER);
+        password.sendKeys("Pass1234",Keys.ENTER);
         Thread.sleep(4000);
 
         // Assertion
@@ -71,7 +72,6 @@ public class GmailLoginTestCases {
             System.out.println("Fail");
         }
 
-        // Exit
-        driver1.quit();
     }
+
 }
