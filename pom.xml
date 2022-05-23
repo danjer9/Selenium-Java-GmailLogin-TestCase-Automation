@@ -32,7 +32,7 @@
             <scope>test</scope>
         </dependency>
 
-    <!-- https://mvnrepository.com/artifact/org.testing -->
+    <!-- https://mvnrepository.com/artifact/org.testing --
         <dependency>
           <groupId>org.testng</groupId>
           <artifactId>testng</artifactId>
